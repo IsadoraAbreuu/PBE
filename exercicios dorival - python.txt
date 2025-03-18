@@ -1,0 +1,99 @@
+"""EXERCÍCIOS DORIVAL - 11/03"""
+"""
+#exercicio1
+nome = "João"
+print(nome)
+
+#exercicio2
+a = 5
+b = 10
+soma = a + b
+subtracao = a - b
+multiplicacao = a * b
+divisao = a / b
+print("O resultado da soma dos números é igual à:", soma)
+print("O resultado da subtração dos números é igual à:", subtracao)
+print("O resultado da multiplicação dos números é igual à:", multiplicacao)
+print("O resultado da divisão dos números é igual à:", divisao)
+
+#exercicio3
+preco = 50
+desconto = 10
+preco_desconto = 50 * 0.10
+preco_final = preco - preco_desconto
+print("O valor final após o desconto aplicado é:", preco_final)
+
+#exercicio4
+resultado = 10 + 5 * 2
+print("O resultado da expressão é:", resultado)
+
+#exercicio5
+texto = "150"
+inteiro = int(texto)
+multiplicacao = inteiro * 2
+print(multiplicacao)
+
+#exercicio6 - não aprendido
+
+#exercicio7
+a = float(input("Digite o primeiro número: "))
+b = float(input("Digite o segundo número: "))
+soma = a + b
+print("O resultado da soma é:", soma)
+
+#exercicio8
+x = float(input("Digite o primeiro número: "))
+y = float(input("Digite o segundo número: "))
+divisao = x / y
+print("O resultado da divisão inteira é:", divisao)
+
+#exercicio9
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+numero = num1 > num2
+print("O número 1 é maior que o número 2? ",numero)
+
+#exercico10
+idade = int(input("Digite sua idade: "))
+funcao = idade * 365
+print(f'Você já viveu, aproximadamente, {funcao} dias.')
+
+#exercicio11
+base = float(input("Digite um valor para a base: "))
+expoente = float(input("Digite um valor para o expoente: "))
+funcao = base ** expoente
+print("O resultado do primeiro valor elevado ao segundo valor é: ",funcao)
+
+#exercicio12
+preco = float(input("Digite um preço: "))
+resultado = "O preço é R$" + str(preco)
+print(resultado)
+
+#exercicio13
+import math
+raio = float(input("Digite o valor do raio de um círculo: "))
+area = math.pi * raio ** 2
+print(f'A área desse círculo com raio {raio} é: {area}')
+
+#exercicio14
+a = int(input("Digite um valor para 'a': "))
+b = int(input("Digite um valor para 'b': "))
+a, b = b, a
+print(f'O novo valor de "a" é {a} e o de "b" é {b}.')
+
+#exercicio15
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+mediap = (nota1 * 2) + (nota2 * 3) + (nota3 * 5)
+print("A média ponderada é igual à: ", mediap)
+
+#exercicio16 - desafio
+import math
+x1 = float(input("Digite um valor para X1 (coordenadas de um plano cartesiano): "))
+y1 = float(input("Digite um valor para Y1 (coordenadas de um plano cartesiano): "))
+x2 = float(input("Digite um valor para X2 (coordenadas de um plano cartesiano): "))
+y2 = float(input("Digite um valor para Y2 (coordenadas de um plano cartesiano): "))
+euclidiana = math.sqrt(((x2 - x1)**2) +(y2 - y1)**2)
+print("A distância entre os pontos, de acordo com a fórmula euclidiana é: ", euclidiana)
+"""
