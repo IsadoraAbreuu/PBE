@@ -54,9 +54,11 @@ print(dicionario)
 
 class Funcionario(Pessoa):
     def __init__(self, nome, idade, cargo):
-        #acima dele
+        #acima dele - herança (pai)
         super().__init__(nome,idade)
         self.cargo = cargo
+
+
     def apresentar(self):
         #chama o print da primeira função apresentar (chama do pai)
         #super().apresentar()
@@ -100,7 +102,7 @@ minha_conta = ContaBancaria("Dorival", - 5000)
 
 from abc import ABC, abstractmethod
 #cria uma interface
-#abstração, colocar uma lei, uma obrigatoriedade
+#metodo de abstração, colocar uma lei, uma obrigatoriedade
 
 class Pagamento(ABC):
 
@@ -120,3 +122,21 @@ class Pix(Pagamento):
         print(f"Devolvendo R$ {valor} via PIX...")
 
 Pix().autorizar(122)
+
+
+#polimorfismo - é a capacidade de um objeto assumir várias formas ou comportamentos, dependendo do contexto em
+# que se encontra. Isso permite que diferentes classes se comportem de forma flexível, interagindo com outras
+# classes e sistemas de forma mais eficiente.
+
+#herança - permite que uma classe (classe filha) herde características (atributos) e comportamentos (métodos)
+# de outra classe (classe pai). Isso promove a reutilização de código, evitando a redundância e simplificando a
+# criação de novas classes com base em classes existentes.
+
+#encapsulamento - é um mecanismo que protege a integridade dos dados de um objeto, restringindo o acesso
+# direto aos seus atributos. Acesso a esses atributos é feito por meio de métodos públicos, garantindo que
+# a lógica interna da classe não seja alterada ou violada de forma acidental ou intencional.
+
+#abstração - A Abstração é a capacidade de representar objetos e conceitos complexos de forma
+# simplificada, focando nos aspectos relevantes e ocultando detalhes desnecessários. Isso permite
+# que os desenvolvedores criem estruturas de dados e algoritmos mais fáceis de entender e utilizar,
+# sem se preocuparem com a complexidade interna.
